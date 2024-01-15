@@ -1,38 +1,126 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  background-color: #cccddf;
+  /* font-family: 'Mulish', sans-serif; */
+}
+
+main {
+  max-width: 380px;
+  margin: 35px auto;
+}
+
+.top-panel {
+  background-color: #4f60e5;
+  padding: 27px 40px 20px 40px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+h1 {
   text-align: center;
+  margin: 0;
+  color: whitesmoke
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form {
+  margin-top: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+form input{
+  width: 100%;
+  background-color: transparent;
   color: white;
+  border: 1.5px solid #b4b4cf;
+  padding: 3px 6px;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+form input::placeholder {
+  color:#b4b4cf;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* form input[type="date"] {
+  color: #b4b4cf;
+} */
+
+form .basic{
+  display: flex;
+  gap: 5px;
+  margin-bottom: 7px;
+}
+
+form input:focus {
+  background-color: #eaeaea;
+  color: #333333;
+}
+
+form button {
+  width: 100%;
+  margin-top: 7px;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #232f9f;
+  color: whitesmoke;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form button:hover {
+  background-color: #1a237e; /* Darker shade on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Subtle box shadow on hover */
+}
+
+.bottom-panel {
+  background-color: #eaeaea;
+  padding: 10px 40px 15px 40px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.transaction {
+  display: flex;
+  padding: 5px 0;
+  justify-content: space-between;
+  border-top: 1px solid #b4b4cf;
+}
+
+.transactions .transaction:first-child {
+  border-top: none;
+}
+
+.transaction .name {
+  font-size: 1rem;
+}
+
+.transaction .description {
+  font-size: .75rem;
+  color: #333333
+}
+
+.right {
+  text-align: right;
+}
+
+.transaction .right .price {
+  font-size: 1rem;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.transaction .right .date {
+  color: #333333;
+  font-size: .75rem
 }
