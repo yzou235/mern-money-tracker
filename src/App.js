@@ -13,7 +13,10 @@ function App() {
     fetch(url, {
       method: 'POST',
       headers: {'Content-type':'application/json'},
-      body: JSON.stringify({name, description, date})
+      body: JSON.stringify({
+        name, 
+        description, 
+        date})
     }).then(response => {
       response.json()
         .then(json => {

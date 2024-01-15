@@ -5,10 +5,13 @@
 }
 
 body {
-  overflow: hidden;
   margin: 0;
   background-color: #cccddf;
   /* font-family: 'Mulish', sans-serif; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
 }
 
 main {
