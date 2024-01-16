@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# MERN Money Tracker Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This money tracker is a MERN (MongoDB, Express.js, React, Node.js) stack web application that helps users track their financial transactions. It provides a user-friendly interface for adding, viewing, and managing financial transactions.
+![Money Tracker Preview](preview1.png)
 
-In the project directory, you can run:
+## Features
 
-### `yarn start`
+- **Add Transactions:** Users can add new financial transactions by specifying the price, name, description, and date.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **View Transactions:** The application displays a list of transactions, including details such as name, description, price, and date. Negative prices are displayed in red, and positive prices are displayed in green for easy identification.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Balance Display:** The balance is prominently displayed at the top, indicating the current financial status.
 
-### `yarn test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **MongoDB:** Database for storing transaction data.
 
-### `yarn build`
+- **Express.js:** Backend framework for handling server-side logic and API requests.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React:** Frontend library for building a dynamic and interactive user interface.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Node.js:** Runtime environment for running the server-side code.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `yarn eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Node.js and npm installed
+- MongoDB installed and running
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+git clone https://github.com/your-username/mern-money-tracker.git
+cd mern-money-tracker
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Set up environment variables
 
-## Learn More
+Create a .env file in the root directory and add the following:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+"REACT_APP_API_URL=http://localhost:4000/api" >> .env
+"MONGO_URL=your_mongo_db_connection_string" >> .env
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Run the application
 
-### Code Splitting
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The application will be accessible at http://localhost:3000.
 
-### Analyzing the Bundle Size
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Open the application in your web browser.
+- Add new transactions by filling out the form at the top of the page.
+- View and manage existing transactions in the list below.
+- The balance is displayed prominently at the top.
